@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Movie Time</h1>
+    </div>
+    
+    <div class="container">
+        <div class="movie-container">
+            <h2>Kaithi</h2>
+            <h5>Lokesh kanagaraj</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur recusandae</p>
+            <button onclick="deletemovie(event)">Delete</button>
+        </div>
+    </div>
+    
+    <button class="add-button" id="add-popup-button">+</button>
+    
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Movie</h2>
+        <form>
+            <input type="text" placeholder="Movie Name" id="movie-name-input">
+            <input type="text" placeholder="Movie Director" id="movie-director-input">
+            <textarea placeholder="Short Description" id="movie-description-input"></textarea>
+            <button id="add-movie">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
